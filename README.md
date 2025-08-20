@@ -17,6 +17,10 @@ To use these circuit files, you need:
 
 A 4-bit Johnson counter (also known as a twisted ring counter) that produces a sequence where only one bit changes at a time.
 
+#### Circuit Diagram
+
+![Johnson Counter](advanced-counters/johnson-counter.png)
+
 **Features:**
 
 - Uses 4 D flip-flops (7474 ICs)
@@ -40,6 +44,10 @@ A 4-bit Johnson counter (also known as a twisted ring counter) that produces a s
 
 A 4-bit ring counter where data circulates in a loop with only one bit set at a time.
 
+#### Circuit Diagram
+
+![Ring Counter](advanced-counters/ring-counter.png)
+
 **Features:**
 
 - Uses 4 D flip-flops (7474 ICs)
@@ -60,6 +68,10 @@ A 4-bit ring counter where data circulates in a loop with only one bit set at a 
 #### 4-bit Ripple Up Counter ([asynchronous-counters/4-bit-ripple-up-counter.circ](asynchronous-counters/4-bit-ripple-up-counter.circ))
 
 An asynchronous binary up counter using JK flip-flops.
+
+#### Circuit Diagram
+
+![4-bit Ripple Up Counter](asynchronous-counters/4-bit-ripple-up-counter.png)
 
 **Features:**
 
@@ -103,9 +115,13 @@ An asynchronous binary down counter using JK flip-flops.
 
 ### Synchronous Counters
 
-#### 4-bit Synchronous Up Counter ([synchronousc-counters/4-bit-syn-up-counter.circ](synchronousc-counters/4-bit-syn-up-counter.circ))
+#### 4-bit Synchronous Up Counter ([synchronous-counters/4-bit-syn-up-counter.circ](synchronous-counters/4-bit-syn-up-counter.circ))
 
-A synchronous binary up counter with parallel clocking (Modulo-12 implementation).
+A synchronous binary up counter with parallel clocking.
+
+#### Circuit Diagram
+
+![4-bit Synchronous Up Counter](synchronous-counters/4-bit-up-counter.png)
 
 **Features:**
 
@@ -124,7 +140,7 @@ A synchronous binary up counter with parallel clocking (Modulo-12 implementation
 | 11 | 1 | 0 | 1 | 1 | 11 |
 | 12 | 0 | 0 | 0 | 0 | 0 (Reset)|
 
-#### 4-bit Synchronous Down Counter ([synchronousc-counters/4-bit-down-counter.circ](synchronousc-counters/4-bit-down-counter.circ))
+#### 4-bit Synchronous Down Counter ([synchronous-counters/4-bit-down-counter.circ](synchronous-counters/4-bit-down-counter.circ))
 
 A synchronous binary down counter with parallel clocking.
 
@@ -144,7 +160,7 @@ A synchronous binary down counter with parallel clocking.
 | ... | ...| ...| ...| ...| ... |
 | 15 | 0 | 0 | 0 | 0 | 0 |
 
-#### Modulo-8 Counter ([synchronousc-counters/modulo-8-counter.circ](synchronousc-counters/modulo-8-counter.circ))
+#### Modulo-8 Counter ([synchronous-counters/modulo-8-counter.circ](synchronous-counters/modulo-8-counter.circ))
 
 A 3-bit synchronous counter that counts from 0 to 7.
 
